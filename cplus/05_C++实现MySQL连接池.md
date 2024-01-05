@@ -12,6 +12,7 @@
 
 
 
+
 MySQL数据库是基于C/S架构进行访问的，除了在服务端使用服务器缓存常用数据，还可以使用连接池来减少每一次创建连接，都会经历的TCP三次握手、MySQL Server连接认证、MySQL Server关闭连接回收资源和TCP四次挥手的性能消耗。
 
 MySQL C++驱动文件：https://downloads.mysql.com/archives/c-c/
