@@ -16,7 +16,10 @@
   - [设置Debug版本和Release版本下库文件的后缀名](#设置debug版本和release版本下库文件的后缀名)
   - [设置Debug版本和Release版本下可执行文件的后缀名](#设置debug版本和release版本下可执行文件的后缀名)
   - [设置生成的target配置安装目录 ](#设置生成的target配置安装目录-)
+
+
 ---
+
 
 
 [win10 安装Cliion + CMake + MSVC/MinGW 作QT开发](https://ifmet.cn/posts/5783d3ec/)
