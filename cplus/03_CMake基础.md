@@ -1,4 +1,23 @@
 # CMake基础
+---
+
+- [基础](#基础)
+  - [常见的CMake变量](#常见的cmake变量)
+  - [添加头文件目录](#添加头文件目录)
+  - [LINK_DIRECTORIES 添加共享库目录](#link_directories-添加共享库目录)
+  - [FIND_LIBRARY 查找库所在目录](#find_library-查找库所在目录)
+  - [LINK_LIBRARIES 添加需要链接的库文件](#link_libraries-添加需要链接的库文件)
+  - [TARGET_LINK_LIBRARIES 设置需要链接的库文件](#target_link_libraries-设置需要链接的库文件)
+  - [add_executable 生成目标文件](#add_executable-生成目标文件)
+- [场景写法](#场景写法)
+  - [判断操作系统平台](#判断操作系统平台)
+  - [指定头文件、链接库生成lib文件](#指定头文件、链接库生成lib文件)
+  - [遍历获取所有文件名](#遍历获取所有文件名)
+  - [设置Debug版本和Release版本下库文件的后缀名](#设置debug版本和release版本下库文件的后缀名)
+  - [设置Debug版本和Release版本下可执行文件的后缀名](#设置debug版本和release版本下可执行文件的后缀名)
+  - [设置生成的target配置安装目录 ](#设置生成的target配置安装目录-)
+---
+
 
 [win10 安装Cliion + CMake + MSVC/MinGW 作QT开发](https://ifmet.cn/posts/5783d3ec/)
 

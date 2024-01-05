@@ -1,4 +1,13 @@
 # C++实现MySQL连接池
+---
+
+- [编写CMake](#编写cmake)
+  - [编译报错 LNK2019](#编译报错-lnk2019)
+  - [0xC0000135 报错解决](#0xc0000135-报错解决)
+  - [test_mysql.cpp 编译失败问题](#test_mysql.cpp-编译失败问题)
+  - [查看exe依赖的dll](#查看exe依赖的dll)
+---
+
 
 MySQL数据库是基于C/S架构进行访问的，除了在服务端使用服务器缓存常用数据，还可以使用连接池来减少每一次创建连接，都会经历的TCP三次握手、MySQL Server连接认证、MySQL Server关闭连接回收资源和TCP四次挥手的性能消耗。
 
