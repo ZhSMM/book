@@ -19,6 +19,10 @@
 2. [k8s基本命令](k8s/02_k8s基本命令.md)
 3. [helm包管理](k8s/03_helm包管理.md)
 
+#### question
+
+1. [github无法访问](question/01_github无法访问.md)
+
 #### script
 
 
