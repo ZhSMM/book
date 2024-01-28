@@ -12,6 +12,7 @@
 
 #### java
 
+1. [SpringBoot常用模块](java/01_SpringBoot常用模块.md)
 
 #### k8s
 
@@ -25,6 +26,7 @@
 
 #### script
 
+1. [linux常用命令使用](script/01_linux常用命令使用.md)
 
 #### vue3
 
