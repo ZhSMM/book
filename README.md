@@ -27,6 +27,8 @@
 #### script
 
 1. [linux常用命令使用](script/01_linux常用命令使用.md)
+2. [windows常用操作](script/02_windows常用操作.md)
+3. [MySQL必知必会](script/03_MySQL必知必会.md)
 
 #### vue3
 

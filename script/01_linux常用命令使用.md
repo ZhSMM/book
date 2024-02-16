@@ -1,4 +1,14 @@
 # linux常用命令使用
+---
+
+- [curl](#curl)
+- [常用写法](#常用写法)
+  - [输出添加行号](#输出添加行号)
+  - [行列转换](#行列转换)
+
+
+---
+
 
 #### curl
 
@@ -54,5 +64,34 @@ curl -O http://www.linux.com/{hello,bb}/dodo[1-5].JPG
 
 # 下载时重命名，#1对应{hello,bb}，#2对应dodo[1-5]
 curl -o #1_#2.jpg http://www.linux.com/{hello,bb}/dodo[1-5].JPG
+```
+
+
+
+#### 常用写法
+
+##### 输出添加行号
+
+```shell
+# 为输出添加行号，可以用在管道后面添加行号
+# $0：代表整行
+# NR：代表行号
+awk '$0=NR":"$0' filename
+
+# cat显示行号
+cat -n filename
+```
+
+##### 行列转换
+
+```shell
+# 行转列：将\n替换成其他分隔符，sed用于替换末尾的\n
+cat /etc/passwd | tr '\n' ',' | sed -e 's/,$/\n/'
+
+# 行转列：以空格为分隔符
+cat /etc/passwd | awk -F "+" '{for(i=1;i<=NF;i++) a[i,NR]=$i}END{for(i=1;i<=NF;i++) {for(j=1;j<=NR;j++) printf a[i,j] " ";print ""}}'
+
+# 行转列：x指多少行拼接成一列
+cat /etc/passwd | xargs -nx
 ```
 
